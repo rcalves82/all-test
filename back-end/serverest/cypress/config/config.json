@@ -1,0 +1,6 @@
+{
+    "url_api": "https://serverest.dev",
+    "env": {
+      "environment": "DEV"
+    }
+  }
