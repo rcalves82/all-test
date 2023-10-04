@@ -9,7 +9,6 @@ Cypress.Commands.add('create_user', (name, email, password, admin) => {
             password: password,
             administrador: admin
         },
-        resp: [],
     })
 })
 
