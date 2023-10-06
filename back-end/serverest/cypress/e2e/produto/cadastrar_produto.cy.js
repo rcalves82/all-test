@@ -27,15 +27,15 @@ describe('Testes de cadastro de produto', () => {
 
         cy.create_user(nome, email, senha, administrador).then(res => {
             expect(res.status).to.eq(201)
-            cy.login(email, senha).then(res => {
-                expect(res.status).to.eq(200)
-                expect(res.body.message).to.eq('Login realizado com sucesso')
-                expect(res.body.authorization).not.be.null
-            })
         })
     })
 
     it('Deve fazer uma requisição POST para cadastrar produto com sucesso', () => {
-        
+        cy.create_product(email, senha, produto, preco, descricao, quantidade).then(res => {
+            expect(res.status).to.eql(200)
+        })
+
+        // cy.getToken(email, senha);
+
     })
 })
