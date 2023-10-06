@@ -7,7 +7,6 @@ let administrador = null
 
 describe('Testes de consultar usuário', () => {
 
-
     it('Deve fazer uma requisição GET para consultar lista de usuários', () => {
         cy.lits_user().then(res => {
             expect(res.status).to.eq(200)
