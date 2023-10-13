@@ -9,5 +9,5 @@ Ter o Node.js instalado no computado, link de instalação => https://nodejs.org
 - Abra o terminal no diretorio do projeto serverest e execute o comando npm install para instalar as dependências
 
 ## Execução do testes
-- Execute o comando test-open para abrir a tela do Cypress para executar os testes interagindo com a tela.
-- Execute o comando test-run para executar os testes em modo headless.
+- Execute o comando "npm run test-open" para abrir a tela do Cypress para executar os testes interagindo com a tela.
+- Execute o comando "npm run test-run" para executar os testes em modo headless.
