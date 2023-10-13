@@ -14,8 +14,8 @@ Cypress.Commands.add('id_product', id => {
     })
 })
 
-Cypress.Commands.add('create_product', (email, senha, produto, preco, descricao, quantidade) => {
-    cy.getToken(email, senha).then(token => {
+Cypress.Commands.add('create_product', (email, pass, prod, pric, descript, amoun) => {
+    cy.getToken(email, pass).then(token => {
         cy.request({
             method: 'POST',
             url: '/produtos',
@@ -25,18 +25,18 @@ Cypress.Commands.add('create_product', (email, senha, produto, preco, descricao,
             },
             failOnStatusCode: false,
             body: {
-                nome: produto,
-                preco: preco,
-                descricao: descricao,
-                quantidade: quantidade
+                nome: prod,
+                preco: pric,
+                descricao: descript,
+                quantidade: amoun
             }
         })
     })
 
 })
 
-Cypress.Commands.add('update_product', (email, senha, id, produto, preco, descricao, quantidade) => {
-    cy.getToken(email, senha).then(token => {
+Cypress.Commands.add('update_product', (email, pass, id, prod, pric, descript, amoun) => {
+    cy.getToken(email, pass).then(token => {
         cy.request({
             method: 'PUT',
             url: `/produtos/${id}`,
@@ -46,18 +46,18 @@ Cypress.Commands.add('update_product', (email, senha, id, produto, preco, descri
             },
             failOnStatusCode: false,
             body: {
-                nome: produto,
-                preco: preco,
-                descricao: descricao,
-                quantidade: quantidade
+                nome: prod,
+                preco: pric,
+                descricao: descript,
+                quantidade: amoun
             }
         })
 
     })
 })
 
-Cypress.Commands.add('delete_product', (email, senha, id) => {
-    cy.getToken(email, senha).then(token => {
+Cypress.Commands.add('delete_product', (email, pass, id) => {
+    cy.getToken(email, pass).then(token => {
         cy.request({
             method: 'DELETE',
             url: `/produtos/${id}`,
