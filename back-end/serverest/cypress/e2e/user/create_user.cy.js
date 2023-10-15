@@ -22,15 +22,14 @@ describe('Create User Tests', () => {
     })
   })
 
-  Cypress._.times(1, () => {
-    it('Must make a POST request informing existing email', () => {
-      cy.create_user(name, (email = 'beltrano@qa.com.br'), password, admin).then(res => {
-        expect(res.status).to.eq(400)
-        expect(res.statusText).to.eq('Bad Request')
-        expect(res.body.message).to.eq('Este email já está sendo usado')
-      })
+  it('Must make a POST request informing existing email', () => {
+    cy.create_user(name, (email = 'beltrano@qa.com.br'), password, admin).then(res => {
+      expect(res.status).to.eq(400)
+      expect(res.statusText).to.eq('Bad Request')
+      expect(res.body.message).to.eq('Este email já está sendo usado')
     })
   })
+
 
 
   it('Must make a POST request with a blank name field', () => {

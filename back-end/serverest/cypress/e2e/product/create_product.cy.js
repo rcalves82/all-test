@@ -11,7 +11,7 @@ let description = null
 let amount = null
 
 describe('Product create tests', () => {
-    
+
     beforeEach(() => {
         name = faker.name.firstName()
         email = faker.internet.email(name)
@@ -36,19 +36,18 @@ describe('Product create tests', () => {
         })
     })
 
-    Cypress._.times(1, () =>{
-        it('Must make a POST request to register an already create product', () => {
-            cy.create_product(email, password, (product='Logitech MX Vertical 3'), price, description, amount).then(res => {
-                expect(res.status).to.eq(400)
-                expect(res.statusText).to.eq('Bad Request')
-                expect(res.body.message).to.eq('Já existe produto com esse nome')
-            })
+    it('Must make a POST request to register an already create product', () => {
+        cy.create_product(email, password, (product = 'Logitech MX Vertical 3'), price, description, amount).then(res => {
+            expect(res.status).to.eq(400)
+            expect(res.statusText).to.eq('Bad Request')
+            expect(res.body.message).to.eq('Já existe produto com esse nome')
         })
     })
-   
+
+
 
     it('Must make a POST request to create a product by entering a blank name', () => {
-        cy.create_product(email, password, (product=""), price, description, amount).then(res => {
+        cy.create_product(email, password, (product = ""), price, description, amount).then(res => {
             expect(res.status).to.eq(400)
             expect(res.statusText).to.eq('Bad Request')
             expect(res.body.nome).to.eq('nome não pode ficar em branco')
