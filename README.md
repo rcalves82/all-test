@@ -1,4 +1,4 @@
-                                                                  # All Tests
+# All Tests
 
 ## Functional Testing
 
@@ -7,7 +7,7 @@
 
 
 ### Installing the project
-- Clone the project in a local environment: https://github.com/rcalves82/all-test.git,
+- Clone the project in a local environment: https://github.com/rcalves82/all-test.git
 - Open the terminal in the "functional-testing" project directory and run the npm install command to install the dependencies.
 
 ### Test execution
@@ -23,4 +23,4 @@
 **Web Testing**
 - In the "e2e/web" directory are the test files.
 - In the "support/web" directory are the commands or methods used in the test scenarios.
-- In the "web_data.js" file are the test masses only for web tests
+- In the "web_data.js" file are the test masses only for web tests.
