@@ -16,7 +16,7 @@
 
 ### Structure
 
-** ** API Testing
+** API Testing **
 - In the "e2e/api" directory are the test files.
 - In the "support/api" directory are the commands or methods used in the test scenarios.
 
