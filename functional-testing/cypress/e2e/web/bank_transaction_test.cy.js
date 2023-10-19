@@ -1,6 +1,5 @@
 import web from '../../support/web_data'
 
-Cypress.config
 describe('Bank transaction test', () => {
     beforeEach(() => {
         cy.visit(web.url);
@@ -14,11 +13,11 @@ describe('Bank transaction test', () => {
     });
 
     it('Must validate transfer between accounts', () => {
-        const valueToTranfer = 100;
+        const valueTranfer = 200;
         cy.login(web.userRegistered, web.password);
-        cy.transfer_account(web.userToTransfer, web.userRegistered, valueToTranfer);
+        cy.transfer_account(web.userToTransfer, web.userRegistered, valueTranfer);
         cy.success_transfer();
-        cy.validate_amount(web.userToTransfer, web.userRegistered, valueToTranfer);
+        cy.validate_amount(web.userToTransfer, web.userRegistered, valueTranfer);
     });
 
     it('Must logout of the account', () => {

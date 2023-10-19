@@ -1,15 +1,26 @@
-# all-test
+# :All Tests:
 
-## API's do ServeRest
+## Functional Testing
 
-### Pré-Requisito 
-Ter o Node.js instalado no computado, link de instalação => https://nodejs.org/pt-br/download/
+### Requirement 
+- Have Node.js installed on your computer, installation link => https://nodejs.org/pt-br/download/
 
 
-### Instalando o projeto
-- Faça o clone do projeto em ambiente local: https://github.com/rcalves82/all-test.git,
-- Abra o terminal no diretorio do projeto serverest e execute o comando npm install para instalar as dependências
+### Installing the project
+- Clone the project in a local environment: https://github.com/rcalves82/all-test.git,
+- Open the terminal in the "functional-testing" project directory and run the npm install command to install the dependencies.
 
-### Execução do testes
-- Execute o comando "npm run test-open" para abrir a tela do Cypress para executar os testes interagindo com a tela.
-- Execute o comando "npm run test-run" para executar os testes em modo headless.
+### Test execution
+- Run the command "npm run test-open" to open the Cypress screen to run tests by interacting with the screen.
+- Run the command "npm run test-run" to run the tests in headless mode.
+
+### Structure
+
+* API Testing
+- In the "e2e/api" directory are the test files.
+- In the "support/api" directory are the commands or methods used in the test scenarios.
+
+* Web Testing
+- In the "e2e/web" directory are the test files.
+- In the "support/web" directory are the commands or methods used in the test scenarios.
+- In the "web_data.js" file are the test masses only for web tests
