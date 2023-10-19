@@ -17,10 +17,10 @@
 ### Structure
 
 **API Testing**
-- In the "e2e/api" directory are the test files.
-- In the "support/api" directory are the commands or methods used in the test scenarios.
+- In the "cypress/e2e/api" directory are the test files.
+- In the "cypress/support/api" directory are the commands or methods used in the test scenarios.
 
 **Web Testing**
-- In the "e2e/web" directory are the test files.
-- In the "support/web" directory are the commands or methods used in the test scenarios.
-- In the "web_data.js" file are the test masses only for web tests.
+- In the "cypress/e2e/web" directory are the test files.
+- In the "cypress/support/web" directory are the commands or methods used in the test scenarios.
+- In the "cypress/support/web_data.js" file are the test masses only for web tests.
