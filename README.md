@@ -11,8 +11,8 @@
 
 ### Test execution
 - Run the command **npm run test-open** to open the Cypress screen to run tests by interacting with the screen.
-- Run the command **"npm run test-run"** to run the tests in headless mode.
-- Run the **"test-api** command to run only the api tests.
+- Run the command **npm run test-run** to run the tests in headless mode.
+- Run the **test-api** command to run only the api tests.
 - Run the **test-chrome** command to listen to web tests in the Chrome browser.
 - Run the **test-chromium** command to listen to web tests in the Chromium browser.
 - Run the **test-firefox** command to listen to web tests in the Firefox browser.
