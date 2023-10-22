@@ -23,7 +23,6 @@ export const options = {
   }
 }
 
-
 export default function () {
 
   //Define the data to create a new user
@@ -47,5 +46,6 @@ export default function () {
   sleep(1)
 
 }
+
 
 

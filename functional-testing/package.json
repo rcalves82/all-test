@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-open": "npx cypress open",
-    "test-run": "npx cypress run"
+    "test-run": "npx cypress run",
+    "test-api": "npx cypress run --spec 'cypress/e2e/api'",
+    "test-chrome": "npx cypress run -b chrome --spec 'cypress/e2e/web'",
+    "test-chromium": "npx cypress run -b chromium --spec 'cypress/e2e/web'",
+    "test-firefox": "npx cypress run -b firefox --spec 'cypress/e2e/web'"
+
   },
   "author": "Rodrigo Clarindo",
   "license": "ISC",
