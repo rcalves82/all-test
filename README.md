@@ -39,7 +39,7 @@
 
 ### Test execution
 
-- Open the terminal and run the **k6 run stress-create-user.js** command to run the test.
+- Open the terminal in directory **performance-testing/tests** and run the **k6 run stress-create-user.js** command to run the test.
 - At the end of the test, a .html file will be created with the test result.
 
 ### Structure
