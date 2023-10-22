@@ -40,7 +40,7 @@
 ### Test execution
 
 - Open the terminal in directory **"performance-testing/tests"** and run the **"k6 run stress-create-user.js"** command to run the test.
-- At the end of the test, a .html file will be created with the test result.
+- At the end of the test, a **".html"** file with the test result will be created in the **"tests"** directory.
 
 ### Structure
 - In the **"libs"** directory is the file **"uuid.js"** which contains the method for generating random test data.
