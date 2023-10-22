@@ -28,7 +28,7 @@ describe('Edit product tests', () => {
         })
     })
 
-    it('Must make a POST request to successfully change product', () => {
+    it('Must make a PUT request to successfully change product', () => {
         cy.create_product(email, password, product, price, description, amount).then(prod => {
             expect(prod.status).to.eq(201)
             expect(prod.body.message).to.eq('Cadastro realizado com sucesso')

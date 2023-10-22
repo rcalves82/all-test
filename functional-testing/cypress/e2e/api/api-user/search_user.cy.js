@@ -15,7 +15,7 @@ describe('Search User Tests', () => {
         })
     })
 
-    it('Must make a GET request to search for a user via id', () => {
+    it('Must make a GET request to search for a user through id', () => {
         name = faker.name.firstName()
         email = faker.internet.email(name)
         password = faker.internet.password()
