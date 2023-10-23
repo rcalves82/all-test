@@ -10,9 +10,9 @@ Cypress.Commands.add('default_mass', (email, name, account, password) => {
 
 Cypress.Commands.add('register_account', (email, name, password) => {
     cy.get('.ihdmxA', { timeout: 3000 }).click();
-    cy.get('div.card__register > form > div > input').then(personalData => {
-        cy.get(personalData[0]).click({ force: true }).type(email);
-        cy.get(personalData[1]).click({ force: true }).type(name);
+    cy.get('div.card__register > form > div > input').then(personal => {
+        cy.get(personal[0]).click({ force: true }).type(email);
+        cy.get(personal[1]).click({ force: true }).type(name);
     })
     cy.get('div.card__register > form > div > div > input').then(passwordFields => {
         cy.get(passwordFields[0]).click({ force: true }).type(password);

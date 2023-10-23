@@ -14,12 +14,12 @@ export function handleSummary(data) {
 export const options = {
   stages: [
     { duration: '10s', target: 50 }, // traffic ramp-up from 1 to a higher 50 users over 10 seconds.
-    { duration: '30s', target: 100 }, // stay at higher 500 users for 100 seconds
-    { duration: '5s', target: 0 }, // ramp-down to 0 users
+    { duration: '30s', target: 100 }, // stay at higher 500 users for 100 seconds.
+    { duration: '5s', target: 0 }, // ramp-down to 0 users.
   ],
   thresholds: {
     http_req_duration: ['p(95)<20000'], // 95% of requests must respond within 2s.
-    http_req_failed: ['rate<0.01'] // 1% of requests may occur in error
+    http_req_failed: ['rate<0.01'] // 1% of requests may occur in error.
   }
 }
 
